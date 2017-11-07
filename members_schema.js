@@ -1,6 +1,6 @@
 
 var mongoose = require("mongoose");
- mongoose.connect("mongodb://localhost/society");
+ mongoose.connect(process.env.DB_URL);
 
 var memberSchema= new mongoose.Schema({
     fname:String,

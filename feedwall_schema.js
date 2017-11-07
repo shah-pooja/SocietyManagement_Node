@@ -1,5 +1,5 @@
 var mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/society");
+mongoose.connect(process.env.DB_URL);
 
 var feedwallSchema= new mongoose.Schema({
     userID:{
